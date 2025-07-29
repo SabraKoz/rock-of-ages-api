@@ -1,3 +1,7 @@
+from django.test import SimpleTestCase
+from rest_framework.test import APIClient
+from rest_framework import status
+
 class SanityTests(SimpleTestCase):
     def setUp(self):
         self.client = APIClient()
